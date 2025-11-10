@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Engagement Invitation</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Georgia', serif;
+      background: url('https://copilot.microsoft.com/th/id/BCO.e552de92-ee07-4074-b435-372dbc80a8f6.png') no-repeat center center fixed;
+      background-size: cover;
+      animation: fadeIn 3s ease-in-out;
+      color: #4B0082;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.85);
+      max-width: 700px;
+      margin: 50px auto;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      text-align: center;
+      animation: slideUp 2s ease-out;
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    h1 {
+      color: #d6336c;
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+
+    h2 {
+      color: #8b0000;
+      margin: 5px 0;
+      animation: fadeInText 3s ease-in forwards;
+      opacity: 0;
+      animation-delay: 1s;
+    }
+
+    @keyframes fadeInText {
+      to { opacity: 1; }
+    }
+
+    .names {
+      font-size: 2em;
+      margin: 20px 0;
+      color: #c71585;
+      position: relative;
+      animation: pulse 3s infinite;
+    }
+
+    .names::before, .names::after {
+      content: "💖";
+      font-size: 1.5em;
+      position: absolute;
+      top: -10px;
+      animation: floatHearts 4s infinite ease-in-out;
+    }
+
+    .names::before {
+      left: -30px;
+      animation-delay: 0s;
+    }
+
+    .names::after {
+      right: -30px;
+      animation-delay: 2s;
+    }
+
+    @keyframes floatHearts {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .date-time, .venue {
+      font-size: 1.2em;
+      margin: 15px 0;
+      animation: slideInLeft 2s ease forwards;
+      opacity: 0;
+    }
+
+    .date-time {
+      animation-delay: 1.5s;
+    }
+
+    .venue {
+      animation-delay: 2s;
+    }
+
+    @keyframes slideInLeft {
+      from { transform: translateX(-50px); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+
+    .wishes {
+      margin-top: 30px;
+      font-size: 1em;
+      color: #6a5acd;
+      animation: fadeInText 3s ease-in forwards;
+      opacity: 0;
+      animation-delay: 2.5s;
+    }
+
+    .ganesha {
+      font-size: 3em;
+      margin-bottom: 10px;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="ganesha">🕉️</div>
+    <h1>Engagement Invitation</h1>
+    <h2>Putta Rajendra & Srilatha</h2>
+    <p>cordially invite you to the engagement function of</p>
+    <div class="names">Sriram & Brundhavani</div>
+    <div class="date-time">
+      <strong>Saturday, November 1, 2025</strong><br>
+      <em>at 12:22 PM</em>
+    </div>
+    <div class="venue">
+      G Convention,<br>
+      NFCL Road, Kakinada
+    </div>
+    <div class="wishes">
+      <p><strong>Best Wishes From:</strong></p>
+      <p>Putta Viswanath Chowdary & Surya Prabhavathi</p>
+      <p>Mutyala Ramarao & Jogi Ratna Kumari</p>
+    </div>
+  </div>
+</body>
+</html>
